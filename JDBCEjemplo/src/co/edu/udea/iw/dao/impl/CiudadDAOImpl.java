@@ -26,7 +26,7 @@ public class CiudadDAOImpl extends DataSource implements CiudadDAO {
 		List<Ciudad> ciudades = new ArrayList<Ciudad>();
 		Connection cnx = null;
 		PreparedStatement ps = null;
-		ResultSet rs = null;
+		ResultSet rs = null;		
 		
 		try {
 			cnx = getConnection();
@@ -45,7 +45,7 @@ public class CiudadDAOImpl extends DataSource implements CiudadDAO {
 			}
 			
 		} catch (SQLException e) {
-			throw new MyException("Ocurrió un error al obtener la informacón de las ciudades en la DB");
+			throw new MyException();
 		}finally{
 			try{
 				if(rs!=null){

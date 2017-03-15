@@ -7,15 +7,19 @@ package co.edu.udea.iw.dto;
  */
 public class Ciudad {
 
-	private long codigo;			//Código de la ciudad en la DB
+	private Long codigo;			//Código de la ciudad en la DB, uso de Long en lugar de long
 	private String nombre;			//Nombre de la ciudad en lal DB
 	private String codigoArea;		//Código de área dela ciudad en la DBS
 	
-	public long getCodigo() {
+	public Long getCodigo() {
 		return codigo;
 	}
+	/**
+	 * Se ha modificado el método para el uso de la clase Long en lugar del tipo primitivo long
+	 * @param codigo
+	 */
 	public void setCodigo(long codigo) {
-		this.codigo = codigo;
+		this.codigo = Long.valueOf(codigo);
 	}
 	public String getNombre() {
 		return nombre;

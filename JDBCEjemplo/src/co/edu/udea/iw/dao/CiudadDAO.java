@@ -17,7 +17,7 @@ public interface CiudadDAO {
 	/**
 	 * Obtiene la lista de ciudades en el sistema, ordenadas alfabéticamente por nombre.
 	 * @return Lista de ciudades.
-	 * @throws MyException Ocurre cuando hay probelas con la conexión a la DB.
+	 * @throws MyException Ocurre cuando hay problemas con la conexión a la DB.
 	 */
 	public List<Ciudad> get() throws MyException;
 }
